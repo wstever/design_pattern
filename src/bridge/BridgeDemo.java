@@ -6,11 +6,17 @@ public class BridgeDemo {
 
 		AbstractRoad speedWay = new SpeedWay();
 		speedWay.aCar = new Car();
+		
 		speedWay.run();
-
 		AbstractRoad street = new Street();
 		street.aCar = new Bus();
 		street.run();
+
+		/*People man = new Man();
+		man.road = speedWay;
+		man.run();*/
+
+
 	}
 }
 
@@ -54,6 +60,27 @@ class Bus extends AbstractCar {
 		super.run();
 		System.out.print("公交车");
 	}
-
 }
 
+abstract class People {
+	AbstractRoad road;
+
+	void run() {
+	}
+}
+
+class Man extends People {
+	void run() {
+		super.run();
+		System.out.print("男人开着");
+		road.run();
+	}
+}
+
+class Woman extends People {
+	void run() {
+		super.run();
+		System.out.print("女人开着");
+		road.run();
+	}
+}
