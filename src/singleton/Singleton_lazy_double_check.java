@@ -1,4 +1,4 @@
-package design_pattern;
+package singleton;
 
 public class Singleton_lazy_double_check {
 
