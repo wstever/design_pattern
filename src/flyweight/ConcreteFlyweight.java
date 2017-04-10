@@ -1,6 +1,5 @@
 package flyweight;
-
-//æﬂÃÂ¿‡
+ 
 public class ConcreteFlyweight extends Flyweight {
 	private String string;
 

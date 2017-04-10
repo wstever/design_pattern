@@ -1,6 +1,5 @@
 package flyweight;
-
-//FlyweightµÄµ÷ÓÃ
+ 
 public class FlyweightPattern {
 	FlyweightFactory factory = new FlyweightFactory();
 	Flyweight fly1, fly2, fly3, fly4, fly5, fly6;

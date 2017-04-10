@@ -1,8 +1,8 @@
 package flyweight;
 
 import java.util.Hashtable;
-
-//工厂方法类
+ 
+//工厂方法类 
 public class FlyweightFactory {
 	// 定义了一个Hashtable用来存储各个对象
 	private Hashtable<Object, Flyweight> flyweights = new Hashtable<Object, Flyweight>();
