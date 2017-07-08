@@ -1,5 +1,5 @@
 package adapter;
 
-public class Ho {
+public class hi {
 
 }
